@@ -1,5 +1,5 @@
 function makeArray(firstArray, secondArray, maxLength) {
-    const newArray = [firstArray.concat(secondArray)];
+    const newArray = firstArray.concat(secondArray);
     if (newArray.length > maxLength) {
     return newArray.slice(0 , maxLength);
     } else {
@@ -14,7 +14,7 @@ console.log(makeArray(["Mango"], ["Ajax", "Chelsea", "Poly", "Houston"], 3)); //
 console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 2)); // ["Earth", "Jupiter"]
 console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus"], 4)); // ["Earth", "Jupiter", "Neptune", "Uranus"]
 console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Venus"], 0)); // []
-console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Saturn", "Globus"], 2));
+console.log(makeArray(["Earth", "Jupiter"], ["Neptune", "Uranus", "Saturn", "Globus"], 2));//["Earth", "Jupiter"]
 
     // Якщо кількість елементів у новому масиві перевищує maxLength, функція повинна повернути копію масиву з довжиною maxLength елементів.
     // В іншому випадку функція повинна повернути весь новий масив.
